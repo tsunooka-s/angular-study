@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-user-list',
@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './user-list.scss',
 })
 export class UserList {
-  users = [
-    { id: 1, name: '田中' },
-    { id: 2, name: '山田' },
-    { id: 3, name: '佐藤' },
-  ];
+  users = input.required<{ id: number; name: string }[]>();
 }

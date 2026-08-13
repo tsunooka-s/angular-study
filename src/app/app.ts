@@ -15,6 +15,12 @@ export class App {
   userName = '';
   showMessage = true;
 
+  users = [
+    { id: 1, name: '田中' },
+    { id: 2, name: '山田' },
+    { id: 3, name: '佐藤' },
+  ];
+
   changeMessage() {
     this.message = 'ボタンがクリックされました！';
   }
