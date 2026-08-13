@@ -1,0 +1,6 @@
+
+<h2>ユーザー一覧</h2>
+
+@for (user of users; track user.id) {
+  <p>{{ user.id }}：{{ user.name }}</p>
+}

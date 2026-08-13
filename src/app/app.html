@@ -2,3 +2,20 @@
 <p>{{ message }}</p>
 <button (click)="changeMessage()">変更</button>
 <button [disabled]="isDisabled">登録</button>
+<hr />
+<label>
+  名前：
+  <input [(ngModel)]="userName" />
+</label>
+
+<p>入力された名前：{{ userName }}</p>
+
+<hr />
+
+@if (showMessage) {
+  <p>このメッセージは表示されています。</p>
+}
+
+<hr />
+
+<app-user-list></app-user-list>
